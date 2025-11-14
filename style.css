@@ -1,0 +1,112 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero-section {
+    height: 100vh;
+     background-image: url(../imagens/imagem1.jpg);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.slogan img {
+    width: 250px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto 3px;
+}
+
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(2px);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    max-width: 500px;
+}
+
+.logo {
+    font-size: 42px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #9d4edd, #f72585);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #cccccc;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn.primary {
+    background: linear-gradient(90deg, #9d4edd, #f72585);
+    color: white;
+    transition:  0.8s, transform 0.8s;
+}
+
+.btn.primary:hover {
+    background: linear-gradient(90deg, #f72585, #9d4edd); /* inverte o degradê */
+    transform: scale(1.05); /* dá o efeito suave corrigido */
+}
+
+
+.btn.secondary {
+    border: 2px solid white;
+    color: rgb(199, 199, 199);
+    background: transparent;
+    transition: 0.3s; 
+
+}
+    .btn.secondary:hover {
+        color:rgb(255, 255, 255) ;
+        
+    }
+    
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    color: #c9c9c9;
+    font-size: 14px;
+}
