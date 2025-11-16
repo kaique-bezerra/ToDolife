@@ -1,0 +1,33 @@
+/* Aplica cor aos textos */
+.pagina2 .titulo2 {
+    font-weight: bold; /* deixa o texto em negrito */
+    background: linear-gradient(90deg, #ac47ff, #ff3992); /* corrigido */
+    -webkit-background-clip: text;  /* Chrome, Safari */
+    -webkit-text-fill-color: transparent; /* faz o texto mostrar o degradê */
+    background-clip: text; /* para outros navegadores que suportam */
+}
+
+
+.pagina2 .texto {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+/* Página */
+.pagina2 {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+    background: url(../assets/imagem1.jpg)
+
+}
+
+/* Para garantir que nada ultrapasse a tela */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
