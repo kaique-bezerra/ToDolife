@@ -5,12 +5,20 @@
     -webkit-background-clip: text;  /* Chrome, Safari */
     -webkit-text-fill-color: transparent; /* faz o texto mostrar o degradê */
     background-clip: text; /* para outros navegadores que suportam */
+    font-size: 60px;
 }
 
 
 .pagina2 .texto {
     font-weight: bold;
+    color: rgb(255, 255, 255);  
+    font-size: 35px;
+}
+
+.pagina2 .textoP {
+    font-weight: bold;
     color: rgb(255, 255, 255);
+    font-size: 22px;
 }
 /* Página */
 .pagina2 {
@@ -29,5 +37,46 @@ html, body, #root {
   padding: 0;
 }
 
+/* BUTTONS */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
+    /* Centraliza os botões */
+    align-items: center;
+}
 
+.btn {
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+
+    width: 450px;        /* largura menor */
+    text-align: center;  /* garante que texto fique centralizado */
+}
+
+/* FALTAVA O "." AQUI !!!! */
+.btn.primary {
+    background: linear-gradient(90deg, #9d4edd, #f72585);
+    color: white;
+    transition: 0.8s, transform 0.8s;
+}
+
+.btn.primary:hover {
+    background: linear-gradient(90deg, #f72585, #9d4edd);
+    transform: scale(1.05);
+}
+
+.btn.secondary {
+    border: 2px solid white;
+    color: rgb(199, 199, 199);
+    background: transparent;
+    transition: 0.3s;
+}
+
+.btn.secondary:hover {
+    color: rgb(255, 255, 255);
+}

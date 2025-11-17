@@ -5,15 +5,15 @@ function Pagina2() {
   return (
     <div className="pagina2">
       <h1 className="titulo2">ToDoLife </h1>
-      <h1 className="texto">Transforme sua Rotina em Jogo </h1>
-      <p className="texto">Você está na segunda página.</p>
-      <p>teste</p>
+      <p className="texto">Transforme sua Rotina em Jogo </p>
+      <p className="textoP"><b>Crie seu personagem,complete missões da vida real e evolua sua <br></br>  propria história</b></p>
   
-      <body>
-        
-      </body>
+      <div className="buttons">
+        <Link to="/pagina3" className="btn primary">Começar</Link>
 
-      <Link to="/pagina3">Ir para Página 2</Link>
+            <a href="#" className="btn secondary">Entrar</a>
+          </div>
+
     </div>
   );
 }
