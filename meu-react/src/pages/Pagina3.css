@@ -3,12 +3,34 @@
   width: 100%;
   margin: 0;
   padding: 30px;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #4d49fc, #1b18e6); /* corrigido */
+  
+}
+.logo-container {
+  border-radius: 180px;
+    margin-bottom: 40px;
+    width: 80px; /* ajuste o tamanho conforme necessário */
+    height: 80px; /* ajuste o tamanho conforme necessário */
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative; 
+     
+  }
 
+.pagina3 .logo {
+    background: linear-gradient(80deg, #ac47ff, #ff3992); /* corrigido */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+    transform-origin: center;
+    padding: 0px;
 
 }
+
 .pagina3 .titulo {
-    color: rgb(196, 3, 3);
+    color:  rgb(255, 255, 255);
     text-align: center;
 }
 /* Para garantir que nada ultrapasse a tela */
