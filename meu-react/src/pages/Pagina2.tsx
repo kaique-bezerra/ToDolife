@@ -7,7 +7,8 @@ function Pagina2() {
       <h1 className="titulo2">ToDoLife </h1>
       <h1 className="texto">Transforme sua Rotina em Jogo </h1>
       <p className="texto">Você está na segunda página.</p>
-
+      <p>teste</p>
+  
       <body>
         
       </body>
