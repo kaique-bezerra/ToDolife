@@ -1,4 +1,4 @@
-import clickSound from "../assets/assets/keyboard-click-327728.mp3.mp3";
+import clickSound from "../assets/keyboard-click-327728.mp3";
 
 export function useClickSound() {
   function tocarClique() {

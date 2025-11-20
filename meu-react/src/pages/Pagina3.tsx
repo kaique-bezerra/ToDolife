@@ -4,10 +4,13 @@ import logo1 from "../assets/ChatGPT Image 17 de nov. de 2025, 19_12_16.png";
 import logo2 from "../assets/logo2.png";
 import logo3 from "../assets/logo3.png";
 import "./Pagina3.css";
+import { useClickSound } from '../hookes/useClickSound';
+
 
 function Pagina3() {
 
-
+  const tocarClique = useClickSound();
+  
 
   const navigate = useNavigate();
 
@@ -35,6 +38,7 @@ function Pagina3() {
 
   function handleClick() {
     // Se for o último clique → redireciona
+    tocarClique();
     if (index === textos.length - 1) { // textos.length - 1 → índice do último texto
       navigate("/"); // ← Mude aqui para a página que você quiser
       return;
