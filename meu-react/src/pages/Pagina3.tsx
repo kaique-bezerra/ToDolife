@@ -40,7 +40,7 @@ function Pagina3() {
     // Se for o último clique → redireciona
     tocarClique();
     if (index === textos.length - 1) { // textos.length - 1 → índice do último texto
-      navigate("/"); // ← Mude aqui para a página que você quiser
+      navigate("/pagina4"); // ← Mude aqui para a página que você quiser
       return;
     }
 
@@ -71,7 +71,7 @@ function Pagina3() {
         </button>
       </div>
 
-      <Link className="link" to="/">Pular</Link>
+      <Link className="link" to="/pagina4">Pular</Link>
     </div>
   );
 }

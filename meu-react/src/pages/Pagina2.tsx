@@ -1,15 +1,11 @@
 import { Link } from "react-router-dom";
 import './Pagina2.css';
-// import click from "../assets/keyboard-click-327728.mp3";
 import { useClickSound } from '../hookes/useClickSound';
 
 function Pagina2() {
 
   const tocarClique = useClickSound();
-  //  function tocarClick() {
-  //   const audio = new Audio(click);
-  //   audio.play();
-  // }
+ 
 
   return (
     <div className="pagina2">

@@ -1,0 +1,17 @@
+.pagina4 {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  background: linear-gradient(90deg, #4d49fc, #1b18e6); /* corrigido */
+  
+}
+.pagina4 .texto {
+    color: white;
+}
+.pagina4 .titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}

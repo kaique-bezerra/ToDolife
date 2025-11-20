@@ -4,6 +4,8 @@ import musica from "./assets/Sunshine Hustle.mp3";  // ⬅️ Import da música
 
 import Pagina2 from "./pages/Pagina2.js";
 import Pagina3 from "./pages/Pagina3.js";
+import Pagina4 from "./pages/Pagina4.js";
+
 function App() {
   
   return (
@@ -15,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Pagina2 />} />
         <Route path="/pagina3" element={<Pagina3 />} />
+        <Route path="/pagina4" element={<Pagina4 />} />
       </Routes>
     </BrowserRouter>
 
