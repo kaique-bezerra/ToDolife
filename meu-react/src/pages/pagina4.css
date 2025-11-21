@@ -15,3 +15,69 @@
     margin-bottom: 10px;
     color: white;
 }
+.pagina4 .imagem-principal {
+    width: 100%;
+    height: auto;
+    border-radius: 11px;
+    border-radius: 100px;
+    background-color: aqua;
+    
+    
+}
+.pagina4 .avatar-imagem {
+  border-radius: 250px;
+  width: 300px;
+  height: 300px;
+  float : left;
+  
+}
+.pagin4 .inputs-user {
+   
+    background-color: aliceblue;
+}
+.pagina4 .nome {
+  color: white;
+}
+
+.pagina4 .opcoes-avatar {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 800px;
+}
+.pagina4 .avatar-opcao {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 10px;
+  cursor: pointer;
+  
+}
+.pagina4 .opcao {
+  display: flex;
+  flex-direction: column;
+}
+.pagin4 .legenda-opcao {
+  color: #000;
+}
+
+.pagina4 .imputs {
+  margin-top: 20px;
+  display: flex;
+  
+}
+.pagina4 .genero-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 100px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #cc9df3, #c55487); /* corrigido */
+  border-radius: 200px;
+
+}
+
+
+
+
+

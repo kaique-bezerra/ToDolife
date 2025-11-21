@@ -3,21 +3,20 @@ import "./Pagina4.css";
 import { useState } from "react";
 
 //import { useClickSound } from '../hookes/useClickSound';
-
-import imagem from "../assets/personagem/mulher/clara/cabeloM1B.jpg";
-import imagem1 from "../assets/personagem/mulher/clara/cabeloM2B.jpg";
-import imagem2 from "../assets/personagem/mulher/escura/cabeloM2N.jpg";
-import imagem3 from "../assets/personagem/mulher/clara/cabeloM3B.jpg";
-import imagem4 from "../assets/personagem/mulher/escura/cabeloM3N.jpg";
-import imagem5 from "../assets/personagem/mulher/clara/cabeloM4B.jpg";
-import imagem6 from "../assets/personagem/mulher/escura/cabeloM4N.jpg";
-import imagem7 from "../assets/personagem/mulher/clara/cabeloM1B.jpg";
-import imagem8 from "../assets/personagem/mulher/escura/cabeloM1N.jpg";
+import imagem from "../assets/personagem/homem/clara/cabeloH1B.jpg";
+import imagem1 from "../assets/personagem/homem/clara/cabeloH2B.jpg";
+import imagem2 from "../assets/personagem/homem/escura/cabeloH2N.jpg";
+import imagem3 from "../assets/personagem/homem/clara/cabeloH3B.jpg";
+import imagem4 from "../assets/personagem/homem/escura/cabeloH3N.jpg";
+import imagem5 from "../assets/personagem/homem/clara/cabeloH4B.jpg";
+import imagem6 from "../assets/personagem/homem/escura/cabeloH4N.jpg";
+import imagem7 from "../assets/personagem/homem/clara/cabeloH1B.jpg";
+import imagem8 from "../assets/personagem/homem/escura/cabeloH1N.jpg";
 
 import feminino from "../assets/feminino.png";
 import masculino from "../assets/masculino.png";
 
-function Pagina4() {
+function Pagina5() {
 
   // 👉 Estado da imagem principal
   const [imagemPrincipal, setImagemPrincipal] = useState(imagem);
@@ -30,8 +29,8 @@ function Pagina4() {
       <p className="titulo">Crie Seu Avatar</p>
       <p className="texto">Este personagem representa você e sua jornada de evolução</p>
 
-      {/* IMAGEM PRINCIPAL */}
       <div className="imagem-principal">
+        {/* 👉 Agora mostra a imagem principal do estado */}
         <img src={imagemPrincipal} alt="Avatar" className="avatar-imagem" />
       </div>
 
@@ -80,7 +79,6 @@ function Pagina4() {
       </div>
 
       <div className="inputs-user">
-
         <div className="opcoes-avatar">
 
           <div className="opcao2">
@@ -126,18 +124,15 @@ function Pagina4() {
         </div>
 
         <div className="imputs">
-          <img src={feminino} alt="Feminino" className="genero-icon" />
-
-          <Link to="/pagina5">
-            <img src={masculino} alt="Masculino" className="genero-icon" />
+          <Link to="/pagina4">
+            <img src={feminino} alt="Feminino" className="genero-icon" />
           </Link>
+          <img src={masculino} alt="Masculino" className="genero-icon" />
         </div>
-
       </div>
 
     </div>
   );
 }
 
-export default Pagina4;
-
+export default Pagina5;
