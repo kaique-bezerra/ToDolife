@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import './Pagina2.css';
 import { useClickSound } from '../hookes/useClickSound';
+import musica from "../assets/Sunshine Hustle.mp3";  // ⬅️ Import da música
+
 
 function Pagina2() {
 
@@ -8,7 +10,10 @@ function Pagina2() {
  
 
   return (
+    
     <div className="pagina2">
+       {/* 🎵 Música de fundo (invisível) */}
+      <audio src={musica} autoPlay loop />
       
 
 

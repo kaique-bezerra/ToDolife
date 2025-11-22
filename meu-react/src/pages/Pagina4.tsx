@@ -14,10 +14,11 @@ import imagem6 from "../assets/personagem/mulher/escura/cabeloM4N.jpg";
 import imagem7 from "../assets/personagem/mulher/clara/cabeloM1B.jpg";
 import imagem8 from "../assets/personagem/mulher/escura/cabeloM1N.jpg";
 
-import feminino from "../assets/feminino.png";
-import masculino from "../assets/masculino.png";
+import feminino from "../assets/feminino.jpg"
+import masculino from "../assets/masculino.jpg";
 
 function Pagina4() {
+
 
   // 👉 Estado da imagem principal
   const [imagemPrincipal, setImagemPrincipal] = useState(imagem);
@@ -35,10 +36,19 @@ function Pagina4() {
         <img src={imagemPrincipal} alt="Avatar" className="avatar-imagem" />
       </div>
 
+        <div className="imputs">
+          <img src={feminino} alt="Feminino" className="genero-icon" />
+
+          <Link to="/pagina5">
+            <img src={masculino} alt="Masculino" className="genero-icon" />
+          </Link>
+        </div>
+                  <p className="texto">Escolha o que mais combina com você</p>
+
       <div className="opcoes-avatar">
 
         <div className="opcao">
-          <p className="legenda-opcao">Cabelo longo</p>
+          <p className="legenda-opcao"> Longo</p>
           <img
             src={imagem1}
             alt="Opção1"
@@ -48,7 +58,7 @@ function Pagina4() {
         </div>
 
         <div className="opcao">
-          <p className="legenda-opcao">Cabelo curto</p>
+          <p className="legenda-opcao"> Curto</p>
           <img
             src={imagem3}
             alt="Opção1"
@@ -58,7 +68,7 @@ function Pagina4() {
         </div>
 
         <div className="opcao">
-          <p className="legenda-opcao">Cabelo franja</p>
+          <p className="legenda-opcao"> Franja</p>
           <img
             src={imagem5}
             alt="Opção1"
@@ -68,7 +78,7 @@ function Pagina4() {
         </div>
 
         <div className="opcao">
-          <p className="legenda-opcao">Cabelo ondulado</p>
+          <p className="legenda-opcao"> Ondulado</p>
           <img
             src={imagem7}
             alt="Opção1"
@@ -84,7 +94,7 @@ function Pagina4() {
         <div className="opcoes-avatar">
 
           <div className="opcao2">
-            <p className="legenda-opcao">Cabelo longo</p>
+            <p className="legenda-opcao"> Longo</p>
             <img
               src={imagem2}
               alt="Opção1"
@@ -94,7 +104,7 @@ function Pagina4() {
           </div>
 
           <div className="opcao2">
-            <p className="legenda-opcao">Cabelo curto</p>
+            <p className="legenda-opcao"> Curto</p>
             <img
               src={imagem4}
               alt="Opção1"
@@ -104,7 +114,7 @@ function Pagina4() {
           </div>
 
           <div className="opcao2">
-            <p className="legenda-opcao">Cabelo franja</p>
+            <p className="legenda-opcao"> Franja</p>
             <img
               src={imagem6}
               alt="Opção1"
@@ -114,7 +124,7 @@ function Pagina4() {
           </div>
 
           <div className="opcao">
-            <p className="legenda-opcao">Cabelo ondulado</p>
+            <p className="legenda-opcao"> Ondulado</p>
             <img
               src={imagem8}
               alt="Opção1"
@@ -125,16 +135,13 @@ function Pagina4() {
 
         </div>
 
-        <div className="imputs">
-          <img src={feminino} alt="Feminino" className="genero-icon" />
-
-          <Link to="/pagina5">
-            <img src={masculino} alt="Masculino" className="genero-icon" />
-          </Link>
-        </div>
 
       </div>
-
+      <div className="botao-avancar-div">
+      <Link to="/">
+        <button className="botao-avancar">Avançar</button>
+      </Link>
+      </div>
     </div>
   );
 }

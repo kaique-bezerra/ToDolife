@@ -22,10 +22,13 @@
 }
 /* Página */
 .pagina2 {
-  min-height: 100vh;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+ width: 100%;
+ min-height: 100vh;        /* altura mínima para telas maiores */
+  min-height: 100dvh; 
   margin: 0;
-  padding: 30px;
+  padding: 0;
     background: url(../assets/imagem1.jpg)
 
 }
@@ -42,6 +45,10 @@ html, body, #root {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 50px;
+    background-color: transparent
+    ;
+    
 
     /* Centraliza os botões */
     align-items: center;
@@ -53,8 +60,7 @@ html, body, #root {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-
-    width: 450px;        /* largura menor */
+    width: 80%;        /* largura menor */
     text-align: center;  /* garante que texto fique centralizado */
 }
 

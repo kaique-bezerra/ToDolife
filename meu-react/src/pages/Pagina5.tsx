@@ -3,6 +3,7 @@ import "./Pagina4.css";
 import { useState } from "react";
 
 //import { useClickSound } from '../hookes/useClickSound';
+
 import imagem from "../assets/personagem/homem/clara/cabeloH1B.jpg";
 import imagem1 from "../assets/personagem/homem/clara/cabeloH2B.jpg";
 import imagem2 from "../assets/personagem/homem/escura/cabeloH2N.jpg";
@@ -13,10 +14,11 @@ import imagem6 from "../assets/personagem/homem/escura/cabeloH4N.jpg";
 import imagem7 from "../assets/personagem/homem/clara/cabeloH1B.jpg";
 import imagem8 from "../assets/personagem/homem/escura/cabeloH1N.jpg";
 
-import feminino from "../assets/feminino.png";
-import masculino from "../assets/masculino.png";
+import feminino from "../assets/feminino.jpg"
+import masculino from "../assets/masculino.jpg";
 
-function Pagina5() {
+function Pagina4() {
+
 
   // 👉 Estado da imagem principal
   const [imagemPrincipal, setImagemPrincipal] = useState(imagem);
@@ -24,20 +26,30 @@ function Pagina5() {
   //const tocarClique = useClickSound();
 
   return (
-    <div className="pagina4">
+    <div className="pagina4 pagina5-bg">
+      
 
       <p className="titulo">Crie Seu Avatar</p>
       <p className="texto">Este personagem representa você e sua jornada de evolução</p>
 
+      {/* IMAGEM PRINCIPAL */}
       <div className="imagem-principal">
-        {/* 👉 Agora mostra a imagem principal do estado */}
         <img src={imagemPrincipal} alt="Avatar" className="avatar-imagem" />
       </div>
+        <div className="imputs">
+        <Link to="/pagina4">
+          <img src={feminino} alt="Feminino" className="genero-icon" />
+          </Link>
+          
+
+            <img src={masculino} alt="Masculino" className="genero-icon" />
+        </div>
+          <p className="texto">Escolha o que mais combina com você</p>
 
       <div className="opcoes-avatar">
 
         <div className="opcao">
-          <p className="legenda-opcao">Cabelo longo</p>
+          <p className="legenda-opcao"> Longo</p>
           <img
             src={imagem1}
             alt="Opção1"
@@ -47,7 +59,7 @@ function Pagina5() {
         </div>
 
         <div className="opcao">
-          <p className="legenda-opcao">Cabelo curto</p>
+          <p className="legenda-opcao"> Curto</p>
           <img
             src={imagem3}
             alt="Opção1"
@@ -57,7 +69,7 @@ function Pagina5() {
         </div>
 
         <div className="opcao">
-          <p className="legenda-opcao">Cabelo franja</p>
+          <p className="legenda-opcao"> Franja</p>
           <img
             src={imagem5}
             alt="Opção1"
@@ -67,7 +79,7 @@ function Pagina5() {
         </div>
 
         <div className="opcao">
-          <p className="legenda-opcao">Cabelo ondulado</p>
+          <p className="legenda-opcao"> Ondulado</p>
           <img
             src={imagem7}
             alt="Opção1"
@@ -79,10 +91,11 @@ function Pagina5() {
       </div>
 
       <div className="inputs-user">
+
         <div className="opcoes-avatar">
 
           <div className="opcao2">
-            <p className="legenda-opcao">Cabelo longo</p>
+            <p className="legenda-opcao"> Longo</p>
             <img
               src={imagem2}
               alt="Opção1"
@@ -92,7 +105,7 @@ function Pagina5() {
           </div>
 
           <div className="opcao2">
-            <p className="legenda-opcao">Cabelo curto</p>
+            <p className="legenda-opcao"> Curto</p>
             <img
               src={imagem4}
               alt="Opção1"
@@ -102,7 +115,7 @@ function Pagina5() {
           </div>
 
           <div className="opcao2">
-            <p className="legenda-opcao">Cabelo franja</p>
+            <p className="legenda-opcao"> Franja</p>
             <img
               src={imagem6}
               alt="Opção1"
@@ -112,7 +125,7 @@ function Pagina5() {
           </div>
 
           <div className="opcao">
-            <p className="legenda-opcao">Cabelo ondulado</p>
+            <p className="legenda-opcao"> Ondulado</p>
             <img
               src={imagem8}
               alt="Opção1"
@@ -123,16 +136,16 @@ function Pagina5() {
 
         </div>
 
-        <div className="imputs">
-          <Link to="/pagina4">
-            <img src={feminino} alt="Feminino" className="genero-icon" />
-          </Link>
-          <img src={masculino} alt="Masculino" className="genero-icon" />
-        </div>
-      </div>
 
+      </div>
+      <div className="botao-avancar-div">
+      <Link to="/">
+        <button className="botao-avancar">Avançar</button>
+      </Link>
+      </div>
     </div>
   );
 }
 
-export default Pagina5;
+export default Pagina4;
+

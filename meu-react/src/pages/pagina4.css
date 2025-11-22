@@ -3,33 +3,49 @@
   width: 100%;
   margin: 0;
   padding: 30px;
-  background: linear-gradient(90deg, #4d49fc, #1b18e6); /* corrigido */
+  background: url(../assets/fundoGenero.jpg)
   
 }
+.pagina5-bg {
+  background: url(../assets/fundoGenero2.jpg);
+}
+
 .pagina4 .texto {
     color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    width: 80%;
+
+    
 }
 .pagina4 .titulo {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
     color: white;
+    text-align: center;
+    width: 80%;
+
 }
 .pagina4 .imagem-principal {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 11px;
     border-radius: 100px;
-    background-color: aqua;
     
     
 }
 .pagina4 .avatar-imagem {
   border-radius: 250px;
-  width: 300px;
-  height: 300px;
-  float : left;
-  
+  align-items: center;
+width: 80%;  
+}
+
+@media (min-width: 768px) {
+  .pagina4 .avatar-imagem {
+    width: 40%;   /* coloque o tamanho que você quer no desktop */
+  }
 }
 .pagin4 .inputs-user {
    
@@ -44,14 +60,19 @@
   display: flex;
   align-items: center;
   justify-content: center;  
-  width: 800px;
+  margin-top: 20px;
+  width: 77%; 
+  padding: 10px;
+
+
 }
 .pagina4 .avatar-opcao {
   width: 100px;
   height: 100px;
   border-radius: 100px;
-  margin: 10px;
+  margin: -10px;
   cursor: pointer;
+
   
 }
 .pagina4 .opcao {
@@ -65,17 +86,35 @@
 .pagina4 .imputs {
   margin-top: 20px;
   display: flex;
-  
+  width: 100%;
+ height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
+@media (min-width: 768px) {
+  .pagina4 .imputs {
+    width: 78%;   /* coloque o tamanho que você quer no desktop */
+  }
+}
+
+
 .pagina4 .genero-icon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin-right: 100px;
   cursor: pointer;
-  background: linear-gradient(90deg, #cc9df3, #c55487); /* corrigido */
   border-radius: 200px;
 
 }
+
+button {
+    background: linear-gradient(90deg, #9d4edd, #f72585);
+    width: 80%;
+    color: white;
+    margin-top: 20px;
+    
+  }
 
 
 
