@@ -139,7 +139,7 @@ function Pagina4() {
 
       </div>
       <div className="botao-avancar-div">
-      <Link to="/">
+      <Link to="/paginas">
         <button className="botao-avancar">Avançar</button>
       </Link>
       </div>

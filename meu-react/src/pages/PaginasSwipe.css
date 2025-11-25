@@ -1,0 +1,45 @@
+.container-swipe {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-area {
+  width: 100%;
+  height: 100%;
+}
+
+/* Barra inferior dividida em 3 partes */
+.menu-inferior-blocos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  z-index: 999;
+}
+
+/* Cada bloco */
+.bloco {
+  flex: 1; /* divide igualmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a;
+  color: #ccc;
+  font-size: 18px;
+  transition: 0.5s ease,
+    transform 0.3s ease; /* transição suave */
+
+  
+}
+
+/* Quando está selecionado */
+.bloco.ativo {
+  background-color: #0077cc; /* cor destaque */
+  transform: translateY(-3px); /* levanta o bloco */
+
+  color: white;
+}
