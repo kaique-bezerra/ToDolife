@@ -27,7 +27,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2a2a2a;
+  background-image: url(../assets/imagem2.jpg);/* cor destaque */
+
+  overflow: hidden;
   color: #ccc;
   font-size: 18px;
   transition: 0.5s ease,
@@ -35,11 +37,23 @@
 
   
 }
+.bloco img {
+  width: 15%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+@media (max-width: 1023px) {
+  .bloco img {
+    width: 40%;
+  }
+}
 
 /* Quando está selecionado */
 .bloco.ativo {
-  background-color: #0077cc; /* cor destaque */
   transform: translateY(-3px); /* levanta o bloco */
+  background-image: url(../assets/imagem1.jpg);
+
 
   color: white;
 }
