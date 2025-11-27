@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .swiper-area {
@@ -57,3 +57,9 @@
 
   color: white;
 }
+.swiper-slide {
+  overflow-y: auto !important;
+  height: 100%;
+}
+
+

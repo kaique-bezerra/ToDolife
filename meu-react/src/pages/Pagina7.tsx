@@ -8,13 +8,17 @@ export default function Pagina7() {
 
   return (
     <div className="pagina7">
+
+      {/* FOLDER */}
       <div className="folder">
 
         <div className="folder-header" onClick={() => setAberto(!aberto)}>
           <div className="avatar">
             <img src={avatar} alt="Avatar" className="avatar-imagem" />
-                        <img src={barra} alt="Avatar" className="barra" />
+            
+            <img src={barra} alt="Barra" className="barra" />
           </div>
+
           <p className="status">Status</p>
           <span className={`seta ${aberto ? "girar" : ""}`}>▼</span>
         </div>
@@ -25,35 +29,41 @@ export default function Pagina7() {
               <th>FORÇA</th>
               <th>20</th>
               <th>INTELIGÊNCIA</th>
-              <td> 10</td>
+              <td>10</td>
               <th>VITALIDADE</th>
-              <td>10</td >
-               
+              <td>10</td>
             </tr>
-           <tr>
-            <th>AGILIDADE</th>
-              <td>10</td >
 
-               <th>DESTREZA</th>
-              <td>10</td >
+            <tr>
+              <th>AGILIDADE</th>
+              <td>10</td>
+
+              <th>DESTREZA</th>
+              <td>10</td>
 
               <th>SORTE</th>
-              <td>10</td >
-
-                 
-
-             
-
-             
-
-              
-
-           </tr>
+              <td>10</td>
+            </tr>
           </table>
-          
         </div>
-
       </div>
+
+      {/* ⭐ CARD DA ATIVIDADE – DEPOIS DO FOLDER */}
+      <div className="atividade-card">
+        <h2 className="atividade-titulo">Faculdade</h2>
+
+        <div className="atividade-loading">
+          <p>XP ao concluir +100</p>
+          <div className="loading-bar">
+            <div className="loading-fill"></div>
+          </div>
+
+          <span className="animando-pontos">Fazendo</span>
+          <p>Objetivo: fique até as 21:00  </p>
+
+        </div>
+      </div>
+
     </div>
   );
 }
