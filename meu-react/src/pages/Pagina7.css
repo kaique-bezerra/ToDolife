@@ -54,7 +54,8 @@ td,tr,th {
 /* CABEÇALHO */
 .folder-header {
   padding: 20px;
-  background: #030a36;
+    background-image: url(../assets/imagem2.jpg);/* cor destaque */
+
   display: flex;
   justify-content: space-between;
   align-items: center;

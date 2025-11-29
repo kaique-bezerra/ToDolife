@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Pagina4.css";
 import { useState } from "react";
 
-//import { useClickSound } from '../hookes/useClickSound';
+import { useClickSound } from '../hookes/useClickSound';
 
 import imagem from "../assets/personagem/homem/clara/cabeloH1B.jpg";
 import imagem1 from "../assets/personagem/homem/clara/cabeloH2B.jpg";
@@ -23,7 +23,7 @@ function Pagina4() {
   // 👉 Estado da imagem principal
   const [imagemPrincipal, setImagemPrincipal] = useState(imagem);
 
-  //const tocarClique = useClickSound();
+  const tocarClique = useClickSound();
 
   return (
     <div className="pagina4 pagina5-bg">
@@ -140,7 +140,7 @@ function Pagina4() {
       </div>
       <div className="botao-avancar-div">
       <Link to="/paginas">
-        <button className="botao-avancar">Avançar</button>
+        <button className="botao-avancar"onClick={tocarClique}>Avançar</button>
       </Link>
       </div>
     </div>

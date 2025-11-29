@@ -9,6 +9,7 @@ export default function Pagina8() {
 
         <div className="missao-card">
           <h2>Ir para a Faculdade</h2>
+          <h3>(Essa missão so pode ser feita no local)</h3>
           <p>Prepare-se, arrume sua mochila e parta para mais um dia de estudos.</p>
           <button>Escolher Missão</button>
         </div>
