@@ -20,7 +20,6 @@ import masculino from "../assets/masculino.jpg";
 function Pagina4() {
 
 
-  // 👉 Estado da imagem principal
   const [imagemPrincipal, setImagemPrincipal] = useState(imagem);
 
   const tocarClique = useClickSound();
@@ -31,7 +30,6 @@ function Pagina4() {
       <p className="titulo">Crie Seu Avatar</p>
       <p className="texto">Este personagem representa você e sua jornada de evolução</p>
 
-      {/* IMAGEM PRINCIPAL */}
       <div className="imagem-principal">
         <img src={imagemPrincipal} alt="Avatar" className="avatar-imagem" />
       </div>

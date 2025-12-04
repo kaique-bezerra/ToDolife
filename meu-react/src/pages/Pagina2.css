@@ -1,10 +1,10 @@
-/* Aplica cor aos textos */
+
 .pagina2 .titulo2 {
-    font-weight: bold; /* deixa o texto em negrito */
-    background: linear-gradient(90deg, #ac47ff, #ff3992); /* corrigido */
-    -webkit-background-clip: text;  /* Chrome, Safari */
-    -webkit-text-fill-color: transparent; /* faz o texto mostrar o degradê */
-    background-clip: text; /* para outros navegadores que suportam */
+    font-weight: bold;
+    background: linear-gradient(90deg, #ac47ff, #ff3992);
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 60px;
 }
 
@@ -20,12 +20,12 @@
     color: rgb(255, 255, 255);
     font-size: 22px;
 }
-/* Página */
+
 .pagina2 {
     display: flex;
     flex-direction: column;
  width: 100%;
- min-height: 100vh;        /* altura mínima para telas maiores */
+ min-height: 100vh;       
   min-height: 100dvh; 
   margin: 0;
   padding: 0;
@@ -33,14 +33,14 @@
 
 }
 
-/* Para garantir que nada ultrapasse a tela */
+
 html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* BUTTONS */
+
 .buttons {
     display: flex;
     flex-direction: column;
@@ -50,7 +50,6 @@ html, body, #root {
     ;
     
 
-    /* Centraliza os botões */
     align-items: center;
 }
 
@@ -60,11 +59,11 @@ html, body, #root {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    width: 80%;        /* largura menor */
-    text-align: center;  /* garante que texto fique centralizado */
+    width: 80%;     
+    text-align: center;  
 }
 
-/* FALTAVA O "." AQUI !!!! */
+
 .btn.primary {
     background: linear-gradient(90deg, #9d4edd, #f72585);
     color: white;

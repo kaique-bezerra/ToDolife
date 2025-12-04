@@ -9,7 +9,6 @@ export default function Pagina7() {
   return (
     <div className="pagina7">
 
-      {/* FOLDER */}
       <div className="folder">
 
         <div className="folder-header" onClick={() => setAberto(!aberto)}>
@@ -48,7 +47,6 @@ export default function Pagina7() {
         </div>
       </div>
 
-      {/* ⭐ CARD DA ATIVIDADE – DEPOIS DO FOLDER */}
       <div className="atividade-card">
         <h2 className="atividade-titulo">Faculdade</h2>
 

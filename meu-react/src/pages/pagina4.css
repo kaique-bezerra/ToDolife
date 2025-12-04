@@ -45,7 +45,7 @@ width: 80%;
 
 @media (min-width: 768px) {
   .pagina4 .avatar-imagem {
-    width: 40%;   /* coloque o tamanho que você quer no desktop */
+    width: 40%;   
   }
 }
 .pagin4 .inputs-user {
@@ -95,7 +95,7 @@ width: 80%;
 }
 @media (min-width: 768px) {
   .pagina4 .imputs {
-    width: 78%;   /* coloque o tamanho que você quer no desktop */
+    width: 78%; 
   }
 }
 

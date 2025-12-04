@@ -2,7 +2,7 @@ import './App.css'
 import { BrowserRouter, Routes , Route, useLocation } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 
-import musica from "./assets/musica.mp3.mp3";  // ⬅️ Import da música
+import musica from "./assets/musica.mp3.mp3";  
 import Pagina2 from "./pages/Pagina2.js";
 import Pagina3 from "./pages/Pagina3.js";
 import Pagina4 from "./pages/Pagina4.js";
@@ -14,14 +14,11 @@ import PaginasSwipe from "./pages/PaginasSwipe";
 
 
 
-// ------------------------
-// Componente controlador de música
-// ------------------------
+
 function MusicaGlobal() {
-  const audioRef = useRef<HTMLAudioElement>(null);  // ⬅️ CORREÇÃO AQUI
+  const audioRef = useRef<HTMLAudioElement>(null); 
   const location = useLocation();
 
-  // Desmutar após primeiro clique (navegadores exigem)
   useEffect(() => {
     const unlock = () => {
       if (audioRef.current) {
@@ -32,7 +29,6 @@ function MusicaGlobal() {
     window.addEventListener("click", unlock);
   }, []);
 
-  // Tocar música somente nas páginas 4 e 5
   useEffect(() => {
     const rota = location.pathname;
 
@@ -49,16 +45,12 @@ function MusicaGlobal() {
 }
 
 
-// ------------------------
-// Seu App original + música
-// ------------------------
 function App() {
 
   return (
     <>
       <BrowserRouter>
 
-        {/* Música global controlada por rota */}
         <MusicaGlobal />
 
         <Routes>

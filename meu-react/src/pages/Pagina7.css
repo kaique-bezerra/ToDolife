@@ -35,10 +35,9 @@ td,tr,th {
 
 
 
-/* Folder ocupa toda a parte de cima */
 .folder {
   width: 100%;
-  height: 60%;  /* ⬅️ Aqui você decide o quanto da tela ocupa */
+  height: 60%;  
   background: #2c2c2c;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -46,15 +45,13 @@ td,tr,th {
   box-shadow: 0 4px 12px #0006;
 }
 
-/* Se quiser ocupar exatamente a metade da tela */
 .folder.aberto {
   height: auto;
 }
 
-/* CABEÇALHO */
 .folder-header {
   padding: 20px;
-    background-image: url(../assets/imagem2.jpg);/* cor destaque */
+    background-image: url(../assets/imagem2.jpg);
 
   display: flex;
   justify-content: space-between;
@@ -77,13 +74,12 @@ td,tr,th {
   transform: rotate(180deg);
 }
 
-/* CONTEÚDO */
 .folder-content {
   max-height: 0;
   overflow: hidden;
   padding: 0 20px;
   transition: max-height 0.9s ease;
-  background-image: url(../assets/imagem2.jpg);/* cor destaque */
+  background-image: url(../assets/imagem2.jpg);
 
 }
 
@@ -111,7 +107,7 @@ width: 18%;
 }
 @media (min-width: 768px) {
   .pagina7 .avatar-imagem {
-    width: 8%;   /* coloque o tamanho que você quer no desktop */
+    width: 8%;  
   }
 }
 

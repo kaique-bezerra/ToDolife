@@ -32,35 +32,28 @@ function Pagina3() {
     }
   ];
 
-  const [index, setIndex] = useState(0); // Índice do texto atual //setIndex → função para atualizar o índice 
-  // // useState(0) → valor inicial do índice
-  // Função para lidar com o clique no botão
+  const [index, setIndex] = useState(0); 
 
   function handleClick() {
-    // Se for o último clique → redireciona
     tocarClique();
-    if (index === textos.length - 1) { // textos.length - 1 → índice do último texto
-      navigate("/pagina4"); // ← Mude aqui para a página que você quiser
+    if (index === textos.length - 1) { 
+      navigate("/pagina4");
       return;
     }
 
-    // Senão → apenas troca os textos
-    setIndex(index + 1); // Atualiza o índice para o próximo texto
+    setIndex(index + 1);
   }
 
   return (
     <div className="pagina3">
       <div className="logo-container">
-        {/*  imagem  */}
         <img src={textos[index].imagem} alt="Logo" className="logo" />
       </div>
 
-      {/* PRIMEIRO TEXTO */}
       <p className="titulo">
         <b>{textos[index].titulo}</b>
       </p>
 
-      {/* SEGUNDO TEXTO */}
       <p className="titulo">
         <b>{textos[index].subtitulo}</b>
       </p>

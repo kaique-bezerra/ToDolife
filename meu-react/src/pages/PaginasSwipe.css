@@ -21,20 +21,18 @@
   z-index: 999;
 }
 
-/* Cada bloco */
 .bloco {
-  flex: 1; /* divide igualmente */
+  flex: 1; 
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../assets/imagem2.jpg);/* cor destaque */
+  background-image: url(../assets/imagem2.jpg);
 
   overflow: hidden;
   color: #ccc;
   font-size: 18px;
   transition: 0.5s ease,
-    transform 0.3s ease; /* transição suave */
-
+    transform 0.3s ease;
   
 }
 .bloco img {
@@ -49,9 +47,8 @@
   }
 }
 
-/* Quando está selecionado */
 .bloco.ativo {
-  transform: translateY(-3px); /* levanta o bloco */
+  transform: translateY(-3px); 
   background-image: url(../assets/imagem1.jpg);
 
 

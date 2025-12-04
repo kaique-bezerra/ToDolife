@@ -7,7 +7,6 @@ import imagem2 from "../assets/icone2.png"
 import imagem3 from "../assets/icone3.png"
 
 
-//import imagem3 from "../assets/icone3-convertido-de-jpg.png"
 
 
 import Pagina6 from "./Pagina6";
@@ -17,7 +16,6 @@ import Pagina8 from "./Pagina8";
 export default function PaginasSwipe() {
   const [paginaAtual, setPaginaAtual] = useState(1);
 
-  // Referência do Swiper para permitir slideTo()
   const swiperRef = useRef<any>(null);
 
   return (
@@ -27,7 +25,7 @@ export default function PaginasSwipe() {
         slidesPerView={1}
         allowTouchMove={true}
         initialSlide={1}
-        onSwiper={(swiper) => (swiperRef.current = swiper)} // guardar referência
+        onSwiper={(swiper) => (swiperRef.current = swiper)} 
         onSlideChange={(swiper) => setPaginaAtual(swiper.activeIndex)}
         className="swiper-area"
       >
@@ -44,7 +42,6 @@ export default function PaginasSwipe() {
         </SwiperSlide>
       </Swiper>
 
-      {/* Barra inferior com 3 blocos (agora clicáveis) */}
       <div className="menu-inferior-blocos">
         <div
           className={`bloco ${paginaAtual === 0 ? "ativo" : ""}`}
